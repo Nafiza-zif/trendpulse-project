@@ -81,7 +81,6 @@ for story_id in ids:
     if category in data and len(data[category]) < 25:
         data[category].append(clean_data)
 
-    # stop when all categories full
     #if all(len(v) >= 25 for v in data.values()):
      #   break
     total_collected=sum(len(v)for v in data.values())
